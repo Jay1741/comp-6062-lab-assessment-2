@@ -18,7 +18,7 @@ const app = Vue.createApp({
     // Define the methods for the app
     methods: {
         activeGasLevel(gasLevel) {
-            return this.gasLevelValue >= gasLevel.min & this.gasLevelValue<= gasLevel.max;
+            return this.gasLevelValue >= gasLevel.min && this.gasLevelValue<= gasLevel.max;
             // The logic goes here for if the gas level is within the level parameters return boolean
         }
     }
