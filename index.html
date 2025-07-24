@@ -19,7 +19,9 @@
             <input type = "range" v-model ="gasLevelValue" min = 0 max = 100>
             <div v-for="gasLevel in gasLevels" :key="gasLevel.id" :class="['gasLevelIndicator', gasLevel.color, {'unactiveGasStatus': !activeGasLevel(gasLevel) }]">{{gasLevel.name }}</div>
         </main>
-
+        <footer>
+            Jay Darji
+        </footer>
 
     </div>
         <!--- Vue.js CDN --->
