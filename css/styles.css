@@ -1,21 +1,21 @@
-gasLevelIndicator{
+.gasLevelIndicator{
     padding: 45px;
     margin: 25px 0;
     text-align: center
 }
 
-danger{
+.danger{
     background-color: red;
 }
 
-warning{
+.warning{
     background-color: yellow;
 }
-safe{
+.safe{
     background-color: green;
 }
 
-unactiveGasStatus{
+.unactiveGasStatus{
     display: none;
 }
 @media{
