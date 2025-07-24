@@ -9,17 +9,19 @@
          
     </head>
     <body class="container">  
+    <div id="app"></div>
         <header>
-            <div id="app">
-            <h1>Gas Level Monitor Interface -{{studentName}}</h1>
-            
-            </div>
+            <h1>Gas Level Monitor Interface -{{studentName}}</h1>    
         </header>
         <main>
-            <div id="app">
             <p>Current Gas Level:</p>
-            </div>
+            <input type = "number" v-model ="gasLevelValue" min = 0 max = 100>
+            <input type = "range" v-model ="gasLevelValue" min = 0 max = 100>
+            <div v-for="gasLevel in gasLevels" :key="gasLevel.id" :class="['gasLevelIndicator', gasLevel.color, {'unactiveGasStatus': !activeGasLevel(gasLevel) }]">{{gasLevel.name }}</div>
         </main>
+
+
+    </div>
         <!--- Vue.js CDN --->
         <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
         <!--- Custom JavaScript file --->
